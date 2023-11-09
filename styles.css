@@ -1,0 +1,157 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#hero {
+    background-image: url("images/los-angeles.jpg");
+    background-size: cover;
+    height: 24rem;
+    margin: 0 auto; 
+    color: white;
+    text-shadow: 5px 5px 1px #38618C;
+}
+
+h1 {
+    font-size: 4.75rem;
+    margin: 0;
+    padding: 6.25rem 0 0 0;
+    transition: all 0.3s ease;
+    
+}
+
+h2 {
+
+    font-size: 2rem;
+    transition: all 0.3s ease;
+}
+
+.grow-on-hover:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+
+}
+
+.activities-quote,
+.activities-title {
+     text-align: center;
+     padding: 0.625rem 0 1.875rem 0;
+     font-size: 1.2rem;
+}
+
+#top-activities {
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 1.25rem;
+    
+}
+
+#activities {
+    background-color: #FFEBEC;
+    margin: 0;
+    padding: 0.313rem 0.625rem 1.875rem 0.625rem;
+    background: linear-gradient(#FFD6D8, #EBF6FF);  
+    line-height: 1.3;
+  
+}
+
+.activity {
+    margin: 0 1.25rem 1.25rem 1.25rem;
+    padding: 0.938rem;
+    flex: 0 1 18.75rem;
+}
+
+.activity:hover {
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+     transition: box-shadow 0.2s ease;
+     cursor: pointer;
+     transform: translateY(-5px);
+  
+}
+
+.activity:hover h4 {
+    color: #ff0000;
+    transition: color 0.2s ease;
+  
+}
+
+.activity:hover ~ .activity h4 {
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+h3 {
+    margin: 0;
+
+}
+
+img {
+    width: 8.75rem;
+    box-shadow: 1px 1px 1px 1px #FFFDEB;
+}
+
+#guide {
+    background: linear-gradient(#EBF6FF, white);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+#guide-card {
+    display: flex;
+    background: #38618C;
+    max-width: 25rem;
+    margin: 0 auto 3.125rem auto;
+    box-shadow: 5px 5px 1px #FFD6D8;
+}
+
+#guide-img {
+    width: 9.375rem;
+    margin: 3.125rem 0.625rem;
+    box-shadow: 2px 2px 1px 1px #FFFDEB;
+}
+
+#guide-information {
+    padding-right: 1.563rem;
+    padding-left: 0.938rem;
+    line-height: 1.3;
+}
+
+#guide-title {
+    font-size: 1.5rem;
+    padding: 1.25rem 0 0.625rem 0;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+#guide-name {
+    padding: 0.625rem;
+}
+
+#guide-card:hover {
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.4s ease;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+#guide-card:hover h3 {
+    color: #ff0000;
+    transition: color 0.4s ease;
+}
+
+#guide-card:hover ~ #guide-card h3 {
+    color: #333;
+    transition: color 0.2s ease;
+}
