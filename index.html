@@ -8,46 +8,57 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
     </head>
     <body> 
-        <!-- HERO SECTION -->
-        <div id="hero"> 
+
+        <!-- HEADER SECTION -->
+        <header class="hero"> 
             <h1 class="grow-on-hover">Visit Los Angeles</h1>
             <h2 class="grow-on-hover">The City of Dreams</h2>
-        </div>
-        <!-- ACTIVITIES SECTION -->
-        <div id="activities">    
-                <p class="activities-quote"><q class="italic-text">I arrived in L.A. at night, so it wasn't until the next morning that I saw this light. And it thrilled my soul.</q> - David Lynch</p>
+        </header>
+
+        <!-- MAIN CONTENT SECTION -->
+        <main>
+
+            <!-- ACTIVITIES SECTION -->
+            <div id="activities">    
+                <p class="activities-title"><q class="italic-text">I arrived in L.A. at night, so it wasn't until the next morning that I saw this light. And it thrilled my soul.</q> - David Lynch</p>
                 <h3 class="activities-title">Things not to miss in Los Angeles</h3>
                 <div id="top-activities"> 
-                    <div class="activity" onclick="window.open('https://griffithobservatory.org/exhibits/samuel-oschin-planetarium/', '_blank')">
-                        <img src="images/griffith-observatory.jpg">
-                        <h4>Venture to the Griffith Observatory</h4>
-                        <p>Travel to the farthest reaches of the universe in the Samuel Oschin Planetarium. Live presentations immerse you in the wonder and meaning of the cosmos.</p>
+                    <div class="activity-card">
+                        <a href="https://griffithobservatory.org/exhibits/samuel-oschin-planetarium/" target="_blank" style="text-decoration: none; color: inherit;">
+                            <img src="images/griffith-observatory.jpg">
+                            <h4>Venture to the Griffith Observatory</h4>
+                            <p>Travel to the farthest reaches of the universe in the Samuel Oschin Planetarium. Live presentations immerse you in the wonder and meaning of the cosmos.</p>
+                        </a>
                     </div>
-                    <div class="activity" onclick="window.open('https://www.visitveniceca.com/', '_blank')">
-                        <img src="images/venice-beach.jpg">
-                        <h4>Dive into Venice Beach </h4>
-                        <p>Enjoy the amazing ocean views, sunbathe, or bike ride along the boardwalk. Go play in the sand and surf the waves as you catch a beautiful Venice beach sunset.
-                        </p>
+                    <div class="activity-card">
+                        <a href="https://www.visitveniceca.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                            <img src="images/venice-beach.jpg">
+                            <h4>Dive into Venice Beach</h4>
+                            <p>Enjoy the amazing ocean views, sunbathe, or bike ride along the boardwalk. Go play in the sand and surf the waves as you catch a beautiful Venice beach sunset.</p>
+                        </a>
                     </div>
-                    <div class="activity" onclick="window.open('https://www.universalstudioshollywood.com/web/en/us', '_blank')">
-                        <img src="images/universal-studios.jpg">
-                        <h4>Take a ride to Universal Studios</h4>
-                        <p>Take the world-famous studio tour, constructed with creative advice from Stephen Spielberg. Peek at 13 blocks of back-lot movie and television show sets, plus some simulated thrills.</p>
+                    <div class="activity-card">
+                        <a href="https://www.universalstudioshollywood.com/web/en/us" target="_blank" style="text-decoration: none; color: inherit;">
+                            <img src="images/universal-studios.jpg">
+                            <h4>Take a ride to Universal Studios</h4>
+                            <p>Take the world-famous studio tour, constructed with creative advice from Stephen Spielberg. Peek at 13 blocks of back-lot movie and television show sets, plus some simulated thrills.</p>
+                        </a>
                     </div>
                 </div> 
-        </div>
-        <!-- GUIDE SECTION -->
-        <div id="guide">
-            <div id="guide-card" onclick="window.open('https://www.linkedin.com/in/george-morales-a0baa6152/', '_blank')">
-                <div>
-                    <img src="images/George.jpg" alt="Your guide posing for a photo in front of a street in the dark city lights" id="guide-img">
-                </div>
-                <div id="guide-information">
-                    <h3 id="guide-title">Your guide</h3>
-                    <p class="italic-text">"As a native Angeleno, I can show you some of the world famous attractions in the city I call home."</p>
-                    <h4 id="guide-name">George Morales</h4>
-                </div>
             </div>
-        </div>
+
+            <!-- GUIDE SECTION -->
+            <footer id="guide">
+                <a href="https://www.linkedin.com/in/george-morales-a0baa6152/" target="_blank" id="guide-card" style="text-decoration: none; color: inherit;">
+                    <img src="images/George.jpg" alt="Your guide posing for a photo in front of a street in the dark city lights" id="guide-img">
+                    <div id="guide-information">
+                        <h3 id="guide-title">Your guide</h3>
+                        <p class="italic-text">"As a native Angeleno, I can show you some of the world famous attractions in the city I call home."</p>
+                        <h4 id="guide-name">George Morales</h4>
+                    </div>
+                </a>
+            </footer>
+
+        </main>
     </body>
 </html>

@@ -12,7 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#hero {
+.hero {
     background-image: url("images/los-angeles.jpg");
     background-size: cover;
     height: 24rem;
@@ -57,7 +57,6 @@ h2 {
 }
 
 #activities {
-    background-color: #FFEBEC;
     margin: 0;
     padding: 0.313rem 0.625rem 1.875rem 0.625rem;
     background: linear-gradient(#FFD6D8, #EBF6FF);  
@@ -65,13 +64,15 @@ h2 {
   
 }
 
-.activity {
+.activity-card, 
+#guide-card {
     margin: 0 1.25rem 1.25rem 1.25rem;
     padding: 0.938rem;
     flex: 0 1 18.75rem;
+    outline: none;
 }
 
-.activity:hover {
+.activity-card:hover, .activity-card:focus {
      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
      transition: box-shadow 0.2s ease;
      cursor: pointer;
@@ -79,13 +80,14 @@ h2 {
   
 }
 
-.activity:hover h4 {
+.activity-card:hover h4, .activity-card:focus h4 {
     color: #ff0000;
     transition: color 0.2s ease;
   
 }
 
-.activity:hover ~ .activity h4 {
+.activity-card:hover ~ .activity h4,
+.activity-card:focus ~ .activity h4 {
     color: #333;
     transition: color 0.2s ease;
 }
@@ -108,16 +110,22 @@ img {
 
 #guide-card {
     display: flex;
+    align-items: center;
     background: #38618C;
-    max-width: 25rem;
+    max-width: 27rem;
     margin: 0 auto 3.125rem auto;
     box-shadow: 5px 5px 1px #FFD6D8;
+    text-decoration: none;
+    color: inherit;
 }
 
 #guide-img {
     width: 9.375rem;
-    margin: 3.125rem 0.625rem;
+    height: 9.375rem;
+    margin: 1.25rem 0.625rem;
     box-shadow: 2px 2px 1px 1px #FFFDEB;
+    display: block;
+
 }
 
 #guide-information {
@@ -139,19 +147,20 @@ img {
     padding: 0.625rem;
 }
 
-#guide-card:hover {
+#guide-card:hover, #guide-card:focus {
     box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.4s ease;
     cursor: pointer;
     transform: translateY(-5px);
 }
 
-#guide-card:hover h3 {
+#guide-card:hover h3, #guide-card:focus h3 {
     color: #ff0000;
     transition: color 0.4s ease;
 }
 
-#guide-card:hover ~ #guide-card h3 {
+#guide-card:hover ~ #guide-card h3,
+#guide-card:focus ~ #guide-card h3 {
     color: #333;
     transition: color 0.2s ease;
 }
